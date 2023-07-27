@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="JOB COMPARISON APP"
+            android:textSize="22sp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btn_addCurrentJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="Add or Update Current Job"/>
+
+
+        <Button
+            android:id="@+id/btn_addJobOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="Add Job Offers"/>
+
+
+
+        <Button
+            android:id="@+id/btn_adjustComparisonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="Adjust Comparison Settings"/>
+
+        <Button
+            android:id="@+id/btn_compareJobOffers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="Compare Job Offers"/>
+
+        <Button
+            android:id="@+id/btn_clearMemory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR MEMORY - REMOVE LATER"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/job_offers_comparison_table"
+            android:textAlignment="center"
+            android:textSize="22sp"/>
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="585dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_performAnotherComparison"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="Another Comparison"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:id="@+id/btn_goMainMenu"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Go to Main Menu"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

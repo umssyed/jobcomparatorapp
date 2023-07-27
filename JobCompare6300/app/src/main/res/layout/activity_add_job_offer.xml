@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/text_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="ADD NEW JOB OFFER"
+            android:textSize="22sp"/>
+
+
+        <!-- Title !-->
+
+
+        <EditText
+            android:id="@+id/enter_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Title" />
+
+        <!-- Company !-->
+
+        <EditText
+            android:id="@+id/enter_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Company name" />
+
+
+        <!-- City !-->
+
+        <EditText
+            android:id="@+id/enter_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter City"
+            android:inputType="text" />
+
+
+        <!-- State !-->
+
+        <EditText
+            android:id="@+id/enter_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter State"
+            android:inputType="text" />
+
+
+        <!-- Cost of Living !-->
+
+        <EditText
+            android:id="@+id/enter_cost_of_living"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Cost of Living index"
+            android:inputType="text" />
+
+
+        <!-- Yearly Salary !-->
+
+        <EditText
+            android:id="@+id/enter_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Yearly Salary" />
+
+
+        <!-- Yearly Bonus !-->
+        <EditText
+            android:id="@+id/enter_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Yearly Bonus" />
+
+
+        <!-- Leave !-->
+        <EditText
+            android:id="@+id/enter_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Leave" />
+
+
+        <!-- Parental Leave !-->
+        <EditText
+            android:id="@+id/enter_parental_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Parental Leave" />
+
+
+        <!-- Life Insurance !-->
+        <EditText
+            android:id="@+id/enter_life_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Life Insurance"/>
+
+
+        <Button
+            android:id="@+id/btn_saveJobOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Job Offer"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_addAnotherJobOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Another Job Offer"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_compareJobOffers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compare Job Offer with Current Job"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_cancelJobOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B63434"
+            android:text="Go to Main Menu"/>
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompareJobOffersActivity"
+    app:backgroundTint="@null">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id1"
+            android:layout_width="match_parent"
+            android:fontWeight="900"
+            android:layout_height="1dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/id2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="COMPARE JOB OFFERS"
+            android:textAlignment="center"
+            android:textSize="22sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/currentJobHeading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Job"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currentJobTitle"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Title"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/currentJobCompany"
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Company"
+                    android:gravity="right"
+                    android:textSize="16sp"
+                    android:textColor="#0000FF"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_weight="1"
+                    android:text="Compare"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:outlineSpotShadowColor="#8A7575"
+            android:paddingLeft="15dp"
+            android:text="Ranked Jobs"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/heading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Click two for comparison"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textFontWeight="6"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Company"
+                android:textAlignment="center"
+                android:textFontWeight="1000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="293dp"
+            android:background="#F8F9FA"
+            android:choiceMode="multipleChoice" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selection1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="15dp"
+                    android:text="First Selection:"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/selection1DynamicText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="15dp"
+                    android:text=""
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selection2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="14dp"
+                    android:text="Second Selection:"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/selection2DynamicText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="15dp"
+                    android:text=""
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_clearSelection"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#B63434"
+                android:enabled="true"
+                android:gravity="center_horizontal"
+                android:text="Clear Selection" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:divider="@color/black"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btn_performComparison"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:backgroundTint="#008080"
+                android:text="Perform Comparison"
+                android:layout_marginRight="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn_cancelCompareJobOffers"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Go to Main Menu"
+                android:backgroundTint="#B63434"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

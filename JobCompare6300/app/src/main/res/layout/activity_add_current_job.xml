@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCurrentJobActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/text_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="ADD OR UPDATE YOUR CURRENT JOB"
+            android:textSize="22sp"/>
+
+
+        <!-- Title !-->
+
+
+        <EditText
+            android:id="@+id/enter_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Title" />
+
+        <!-- Company !-->
+
+        <EditText
+            android:id="@+id/enter_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Company name" />
+
+
+        <!-- City !-->
+
+        <EditText
+            android:id="@+id/enter_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter City"
+            android:inputType="text" />
+
+
+        <!-- State !-->
+
+        <EditText
+            android:id="@+id/enter_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter State"
+            android:inputType="text" />
+
+
+        <!-- Cost of Living !-->
+
+        <EditText
+            android:id="@+id/enter_cost_of_living"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Cost of Living index"
+            android:inputType="text" />
+
+
+        <!-- Yearly Salary !-->
+
+        <EditText
+            android:id="@+id/enter_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Yearly Salary" />
+
+
+        <!-- Yearly Bonus !-->
+        <EditText
+            android:id="@+id/enter_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Yearly Bonus" />
+
+
+        <!-- Leave !-->
+        <EditText
+            android:id="@+id/enter_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Leave" />
+
+
+        <!-- Parental Leave !-->
+        <EditText
+            android:id="@+id/enter_parental_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Parental Leave" />
+
+
+        <!-- Life Insurance !-->
+        <EditText
+            android:id="@+id/enter_life_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Enter Life Insurance"/>
+
+
+        <Button
+            android:id="@+id/btn_saveCurrentJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Current Job"
+            android:enabled="false"/>
+
+
+        <Button
+            android:id="@+id/btn_cancelCurrentJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B63434"
+            android:text="Cancel or Exit to Main Menu"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
